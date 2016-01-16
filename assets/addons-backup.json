@@ -1,0 +1,29 @@
+[
+    {
+            "id":"custom-fields-for-wtb",
+            "title":"Custom Fields for Restaurant Reservations",
+            "url":"http:\/\/themeofthecrop.com\/plugin\/custom-fields-wp-table-bookings\/",
+            "price":"$30",
+            "img":"https:\/\/themeofthecrop.com\/promo\/plugins\/custom-fields-for-wtb.png",
+            "status":"released",
+            "description":"Add custom fields and edit your booking form with ease."
+    },
+    {
+            "id":"mailchimp-for-wtb",
+            "title":"MailChimp for Restaurant Reservations",
+            "url":"http:\/\/themeofthecrop.com\/plugin\/mailchimp-wp-table-bookings\/",
+            "price":"$20",
+            "img":"https:\/\/themeofthecrop.com\/promo\/plugins\/mailchimp-for-wtb.png",
+            "status":"released",
+            "description":"Subscribe emails from new restaurant reservations to your MailChimp mailing list. <strong>Use a different mailing list provider? Let me know <a href=\"http:\/\/themeofthecrop.com\/2015\/12\/17\/suggest-next-mailing-list-integration\/?utm_source=Plugin&utm_medium=Addon%20List&utm_campaign=Restaurant%20Reservations\">which one</a>.</strong>"
+    },
+    {
+            "id":"export-bookings-for-wtb",
+            "title":"Export Bookings for Restaurant Reservations",
+            "url":"http:\/\/themeofthecrop.com\/plugin\/export-bookings-for-wp-table-bookings\/",
+            "price":"$20",
+            "img":"https:\/\/themeofthecrop.com\/promo\/plugins\/export-bookings-for-wtb.png",
+            "status":"released",
+            "description":"Export your restaurant reservations to PDF and Excel/CSV files."
+    }
+]
