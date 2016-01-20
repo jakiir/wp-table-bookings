@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbAdminBookings' ) ) {
 /**
- * Class to handle the admin bookings page for Restaurant Reservations
+ * Class to handle the admin bookings page for Table Bookings
  *
  * @since 1.3
  */
@@ -69,7 +69,7 @@ class wtbAdminBookings {
 
 		<div class="wrap">
 			<h1>
-				<?php _e( 'Restaurant Bookings', 'wp-table-bookings' ); ?>
+				<?php _e( 'Table Bookings', 'wp-table-bookings' ); ?>
 				<a href="#" class="add-new-h2 page-title-action add-booking"><?php _e( 'Add New', 'wp-table-bookings' ); ?></a>
 			</h1>
 
@@ -122,7 +122,7 @@ class wtbAdminBookings {
 		global $wtb_controller;
 		?>
 
-		<!-- Restaurant Reservations add/edit booking modal -->
+		<!-- Table Bookings add/edit booking modal -->
 		<div id="wtb-booking-modal" class="wtb-admin-modal">
 			<div class="wtb-booking-form wtb-container">
 				<form method="POST">
@@ -157,7 +157,7 @@ class wtbAdminBookings {
 			</div>
 		</div>
 
-		<!-- Restaurant Reservations send email modal -->
+		<!-- Table Bookings send email modal -->
 		<div id="wtb-email-modal" class="wtb-admin-modal">
 			<div class="wtb-email-form wtb-container">
 				<form method="POST">
@@ -198,7 +198,7 @@ class wtbAdminBookings {
 			</div>
 		</div>
 
-		<!-- Restaurant Reservations column configuration modal -->
+		<!-- Table Bookings column configuration modal -->
 		<div id="wtb-column-modal" class="wtb-admin-modal">
 			<div class="wtb-column-form wtb-container">
 				<form method="POST">
@@ -244,7 +244,7 @@ class wtbAdminBookings {
 			</div>
 		</div>
 
-		<!-- Restaurant Reservations details modal -->
+		<!-- Table Bookings details modal -->
 		<div id="wtb-details-modal" class="wtb-admin-modal">
 			<div class="wtb-details-form wtb-container">
 				<div class="wtb-details-data"></div>
@@ -254,7 +254,7 @@ class wtbAdminBookings {
 			</div>
 		</div>
 
-		<!-- Restaurant Reservations error message modal -->
+		<!-- Table Bookings error message modal -->
 		<div id="wtb-error-modal" class="wtb-admin-modal">
 			<div class="wtb-error wtb-container">
 				<div class="wtb-error-msg"></div>

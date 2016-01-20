@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Restaurant Reservations\n"
+"Project-Id-Version: Table Bookings\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/restaurant-"
 "reservations\n"
 "POT-Creation-Date: 2015-03-31 09:08:36+00:00\n"
@@ -29,8 +29,8 @@ msgid "Loading"
 msgstr "Laden"
 
 #: includes/Addons.class.php:135
-msgid "Addons for Restaurant Reservations"
-msgstr "Extensies voor Restaurant Reservations"
+msgid "Addons for Table Bookings"
+msgstr "Extensies voor Table Bookings"
 
 #: includes/Addons.class.php:157
 msgid "You have been logged out. Please login again to retrieve the addons."
@@ -56,8 +56,8 @@ msgstr ""
 "support/plugin/wp-table-bookings\" target=\"_blank\">help forums</a>."
 
 #: includes/AdminBookings.class.php:67
-msgid "Restaurant Bookings"
-msgstr "Restaurant reserveringen"
+msgid "Table Bookings"
+msgstr "Table reserveringen"
 
 #: includes/AdminBookings.class.php:68 includes/CustomPostTypes.class.php:42
 msgid "Add New"
@@ -984,16 +984,16 @@ msgstr ""
 "probleem blijft, meld u dan af en weer aan."
 
 #: wp-table-bookings.php:290
-msgid "View the help documentation for Restaurant Reservations"
-msgstr "Bekijk de help documentatie voor Restaurant Reservations"
+msgid "View the help documentation for Table Bookings"
+msgstr "Bekijk de help documentatie voor Table Bookings"
 
 #: wp-table-bookings.php:290
 msgid "Help"
 msgstr "Help"
 
 #. Plugin Name of the plugin/theme
-msgid "Restaurant Reservations"
-msgstr "Restaurant Reservations"
+msgid "Table Bookings"
+msgstr "Table Bookings"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme

@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbNotification' ) ) {
 /**
- * Base class to handle a notification for Restaurant Reservations
+ * Base class to handle a notification for Table Bookings
  *
  * This class sets up the notification content and sends it when run by
  * wtbNotifications. This class should be extended for each type of

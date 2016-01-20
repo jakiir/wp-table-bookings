@@ -17,18 +17,18 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #
-# $links['help'] = '<a href="' . WTB_PLUGIN_URL . '/docs" title="' . __( 'View the help documentation for Restaurant Reservations', 'wp-table-bookings' ) . '">' . __( 'Help', 'wp-table-bookings' ) . '</a>';
+# $links['help'] = '<a href="' . WTB_PLUGIN_URL . '/docs" title="' . __( 'View the help documentation for Table Bookings', 'wp-table-bookings' ) . '">' . __( 'Help', 'wp-table-bookings' ) . '</a>';
 # }
 # wpml-name: 6a26f548831e6a8c26bfbbd9f6ec61e0
 msgid "Help"
 msgstr "עזרה"
 
 #
-# $links['help'] = '<a href="' . WTB_PLUGIN_URL . '/docs" title="' . __( 'View the help documentation for Restaurant Reservations', 'wp-table-bookings' ) . '">' . __( 'Help', 'wp-table-bookings' ) . '</a>';
+# $links['help'] = '<a href="' . WTB_PLUGIN_URL . '/docs" title="' . __( 'View the help documentation for Table Bookings', 'wp-table-bookings' ) . '">' . __( 'Help', 'wp-table-bookings' ) . '</a>';
 # }
 # wpml-name: 9728c86c55097a44851716108af0810a
-msgid "View the help documentation for Restaurant Reservations"
-msgstr "הצג את התיעוד עבור Restaurant Reservations"
+msgid "View the help documentation for Table Bookings"
+msgstr "הצג את התיעוד עבור Table Bookings"
 
 # 'edit_booking'		=> __( 'Edit Booking', 'wp-table-bookings' ),
 # 'error_unspecified'	=> __( 'An unspecified error occurred. Please try again. If the problem persists, try logging out and logging back in.', 'wp-table-bookings' ),
@@ -234,10 +234,10 @@ msgid "Add Booking"
 msgstr "הוספת הזמנה"
 
 # <h2>
-# <?php _e( 'Restaurant Bookings', 'wp-table-bookings' ); ?>
+# <?php _e( 'Table Bookings', 'wp-table-bookings' ); ?>
 # <a href="#" class="add-new-h2 add-booking"><?php _e( 'Add New', 'wp-table-bookings' ); ?></a>
 # wpml-name: 38f655ee5f13a856aaa42ff2252da6c9
-msgid "Restaurant Bookings"
+msgid "Table Bookings"
 msgstr "הזמנות מסעדה"
 
 # 'error'		=> 'trash_failed',
@@ -1081,11 +1081,11 @@ msgid "An unknown error occured."
 msgstr "אירעה שגיאה לא ידועה."
 
 # <div class="wrap">
-# <h2><?php _e( 'Addons for Restaurant Reservations', 'wp-table-bookings' ); ?></h2>
+# <h2><?php _e( 'Addons for Table Bookings', 'wp-table-bookings' ); ?></h2>
 # <?php do_action( 'wtb_addons_pre' ); ?>
 # wpml-name: d663fa0937e3cb9288900b278394d369
-msgid "Addons for Restaurant Reservations"
-msgstr "תוספים ל Restaurant Reservations"
+msgid "Addons for Table Bookings"
+msgstr "תוספים ל Table Bookings"
 
 # 'error' => 'apifailed',
 # 'msg' => __( 'The addons list could not be retrieved. Please <a href="">try again</a>. If the problem persists over time, please report it on the <a href="http://wordpress.org/support/plugin/wp-table-bookings" target="_blank">support forums</a>.', 'wp-table-bookings' ),
@@ -1192,7 +1192,7 @@ msgstr "עריכת הזמנות"
 msgid "Add New Booking"
 msgstr "הוספת הזמנה חדשה"
 
-# <?php _e( 'Restaurant Bookings', 'wp-table-bookings' ); ?>
+# <?php _e( 'Table Bookings', 'wp-table-bookings' ); ?>
 # <a href="#" class="add-new-h2 add-booking"><?php _e( 'Add New', 'wp-table-bookings' ); ?></a>
 # </h2>
 # wpml-name: de9ced9bf5e9829de4a93ad8c9d7a170

@@ -1,8 +1,8 @@
-# Copyright (C) 2015 Restaurant Reservations
-# This file is distributed under the same license as the Restaurant Reservations package.
+# Copyright (C) 2015 Table Bookings
+# This file is distributed under the same license as the Table Bookings package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Restaurant Reservations 1.4\n"
+"Project-Id-Version: Table Bookings 1.4\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/restaurant-"
 "reservations\n"
 "POT-Creation-Date: 2015-02-24 15:16:53+00:00\n"
@@ -30,8 +30,8 @@ msgid "Loading"
 msgstr "Caricando"
 
 #: includes/Addons.class.php:135
-msgid "Addons for Restaurant Reservations"
-msgstr "Addons per Restaurant Reservations"
+msgid "Addons for Table Bookings"
+msgstr "Addons per Table Bookings"
 
 #: includes/Addons.class.php:157
 msgid "You have been logged out. Please login again to retrieve the addons."
@@ -58,7 +58,7 @@ msgstr ""
 "\">forum di supporto</a>"
 
 #: includes/AdminBookings.class.php:67
-msgid "Restaurant Bookings"
+msgid "Table Bookings"
 msgstr "Prenotazioni ristorante"
 
 #: includes/AdminBookings.class.php:68 includes/CustomPostTypes.class.php:42
@@ -953,7 +953,7 @@ msgstr ""
 "persiste, effettuare il logout ed effettuare nuovamente l'accesso"
 
 #: wp-table-bookings.php:281
-msgid "View the help documentation for Restaurant Reservations"
+msgid "View the help documentation for Table Bookings"
 msgstr "Visualizza l'help per il plugin"
 
 #: wp-table-bookings.php:281
@@ -961,12 +961,12 @@ msgid "Help"
 msgstr "Help"
 
 #. Plugin Name of the plugin/theme
-msgid "Restaurant Reservations"
-msgstr "Restaurant Reservations"
+msgid "Table Bookings"
+msgstr "Table Bookings"
 
-#. #-#-#-#-#  wp-table-bookings.pot (Restaurant Reservations 1.4)  #-#-#-#-#
+#. #-#-#-#-#  wp-table-bookings.pot (Table Bookings 1.4)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  wp-table-bookings.pot (Restaurant Reservations 1.4)  #-#-#-#-#
+#. #-#-#-#-#  wp-table-bookings.pot (Table Bookings 1.4)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "http://themeofthecrop.com"
 msgstr "http://themeofthecrop.com"

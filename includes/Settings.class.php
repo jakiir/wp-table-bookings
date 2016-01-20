@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbSettings' ) ) {
 /**
- * Class to handle configurable settings for Restaurant Reservations
+ * Class to handle configurable settings for Table Bookings
  *
  * @since 0.0.1
  */

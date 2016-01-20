@@ -1,8 +1,8 @@
-# Copyright (C) 2015 Restaurant Reservations
-# This file is distributed under the same license as the Restaurant Reservations package.
+# Copyright (C) 2015 Table Bookings
+# This file is distributed under the same license as the Table Bookings package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Restaurant Reservations 1.4.6\n"
+"Project-Id-Version: Table Bookings 1.4.6\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/restaurant-"
 "reservations\n"
 "POT-Creation-Date: 2015-06-20 11:11:08+00:00\n"
@@ -29,8 +29,8 @@ msgid "Loading"
 msgstr "Indlæser"
 
 #: includes/Addons.class.php:135
-msgid "Addons for Restaurant Reservations"
-msgstr "Tilføjelser til Restaurant Reservations"
+msgid "Addons for Table Bookings"
+msgstr "Tilføjelser til Table Bookings"
 
 #: includes/Addons.class.php:157
 msgid "You have been logged out. Please login again to retrieve the addons."
@@ -58,7 +58,7 @@ msgstr ""
 "\">supportfora</a>"
 
 #: includes/AdminBookings.class.php:67
-msgid "Restaurant Bookings"
+msgid "Table Bookings"
 msgstr "Bordreservationer"
 
 #: includes/AdminBookings.class.php:68 includes/CustomPostTypes.class.php:42
@@ -991,16 +991,16 @@ msgstr ""
 "fortsætter, kan du prøve at logge ud og logge ind igen."
 
 #: wp-table-bookings.php:290
-msgid "View the help documentation for Restaurant Reservations"
-msgstr "Se hjælpevejledningen for Restaurant Reservationer"
+msgid "View the help documentation for Table Bookings"
+msgstr "Se hjælpevejledningen for Table Reservationer"
 
 #: wp-table-bookings.php:290
 msgid "Help"
 msgstr "Hjælp"
 
 #. Plugin Name of the plugin/theme
-msgid "Restaurant Reservations"
-msgstr "Restaurant Reservations"
+msgid "Table Bookings"
+msgstr "Table Bookings"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme

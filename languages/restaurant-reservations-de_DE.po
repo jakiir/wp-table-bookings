@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Restaurant Reservations 1.2.3\n"
+"Project-Id-Version: Table Bookings 1.2.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-02 10:23+0100\n"
 "PO-Revision-Date: 2015-07-02 10:25+0100\n"
@@ -64,7 +64,7 @@ msgid "Addons"
 msgstr "Erweiterungen"
 
 #: ../includes/Addons.class.php:135
-msgid "Addons for Restaurant Reservations"
+msgid "Addons for Table Bookings"
 msgstr "Erweiterungen zu Reservierungen"
 
 #: ../includes/Addons.class.php:157
@@ -104,7 +104,7 @@ msgid "Bookings"
 msgstr "Reservierungen"
 
 #: ../includes/AdminBookings.class.php:67
-msgid "Restaurant Bookings"
+msgid "Table Bookings"
 msgstr "Reservierungen"
 
 #: ../includes/AdminBookings.class.php:68
@@ -1536,21 +1536,21 @@ msgstr ""
 "und Einloggen."
 
 #: ../wp-table-bookings.php:290
-msgid "View the help documentation for Restaurant Reservations"
-msgstr "Hilfe für das Plugin Restaurant Reservierungen"
+msgid "View the help documentation for Table Bookings"
+msgstr "Hilfe für das Plugin Table Reservierungen"
 
 #: ../wp-table-bookings.php:290
 msgid "Help"
 msgstr "Hilfe"
 
-#~ msgid "Restaurant Reservations"
+#~ msgid "Table Bookings"
 #~ msgstr "Reservierungen"
 
 #~ msgid "http://themeofthecrop.com"
 #~ msgstr "http://themeofthecrop.com"
 
 #~ msgid "Accept restaurant reservations and bookings online."
-#~ msgstr "Nehmen Sie online Reservierungen für Ihr Restaurant an."
+#~ msgstr "Nehmen Sie online Reservierungen für Ihr Table an."
 
 #~ msgid "Theme of the Crop"
 #~ msgstr "Ein Theme von The Crop"

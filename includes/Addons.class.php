@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbAddons' ) ) {
 /**
- * Class to handle the addons page for Restaurant Reservations
+ * Class to handle the addons page for Table Bookings
  *
  * @since 1.3
  */
@@ -135,7 +135,7 @@ class wtbAddons {
 		?>
 
 		<div class="wrap">
-			<h1><?php _e( 'Addons for Restaurant Reservations', 'wp-table-bookings' ); ?></h1>
+			<h1><?php _e( 'Addons for Table Bookings', 'wp-table-bookings' ); ?></h1>
 			<?php do_action( 'wtb_addons_pre' ); ?>
 			<div id="wtb-addons">
 				<div class="wtb-loading">
@@ -218,7 +218,7 @@ class wtbAddons {
 		?>
 
 		<p>
-			<?php echo sprintf( esc_html_x( 'Find out when new addons are available by subscribing to the %smonthly newsletter%s or following %sTheme of the Crop%s on Twitter.', 'wp-table-bookings' ), '<a href="http://themeofthecrop.com/about/mailing-list/?utm_source=Plugin&utm_medium=Addon%20List&utm_campaign=Restaurant%20Reservations">', '</a>', '<a href="http://twitter.com/themeofthecrop">', '</a>' ); ?>
+			<?php echo sprintf( esc_html_x( 'Find out when new addons are available by subscribing to the %smonthly newsletter%s or following %sTheme of the Crop%s on Twitter.', 'wp-table-bookings' ), '<a href="http://themeofthecrop.com/about/mailing-list/?utm_source=Plugin&utm_medium=Addon%20List&utm_campaign=Table%20Bookings">', '</a>', '<a href="http://twitter.com/themeofthecrop">', '</a>' ); ?>
 		</p>
 
 		<?php

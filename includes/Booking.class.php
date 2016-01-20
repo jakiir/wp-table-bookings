@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbBooking' ) ) {
 /**
- * Class to handle a booking for Restaurant Table Bookings
+ * Class to handle a booking for Table Bookings
  *
  * @since 0.0.1
  */
@@ -118,8 +118,17 @@ class wtbBooking {
 	 * @since 0.0.1
 	 */
 	public function format_date( $date ) {
-		$date = mysql2date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $date);
+		$date = mysql2date( get_option( 'date_format' ) , $date);
 		return apply_filters( 'get_the_date', $date );
+	}
+	
+	/**
+	 * Format time
+	 * @since 0.0.1
+	 */
+	public function format_time( $time ) {
+		$time = mysql2date( get_option( 'time_format' ), $time);
+		return apply_filters( 'get_the_date', $time );
 	}
 
 	/**

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Restaurant Reservations\n"
+"Project-Id-Version: Table Bookings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu Jul 17 2014 15:43:57 GMT+0100 (GMT Daylight Time)\n"
 "PO-Revision-Date: Tue Sep 30 2014 20:46:45 GMT-0300 (CLST)\n"
@@ -391,11 +391,11 @@ msgid "Bookings"
 msgstr "Reservas [Titulo de la opción de menú para la administración de reservas]"
 
 #: ../wp-table-bookings.php:178
-msgid "Restaurant Bookings"
-msgstr "Reservas para Restaurant"
+msgid "Table Bookings"
+msgstr "Reservas para Table"
 
 #: ../wp-table-bookings.php:279
-msgid "View the help documentation for Restaurant Reservations"
+msgid "View the help documentation for Table Bookings"
 msgstr "Ver la documentación de ayuda para la aplicación"
 
 #: ../wp-table-bookings.php:279

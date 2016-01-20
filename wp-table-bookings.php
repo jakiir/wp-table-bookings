@@ -278,7 +278,7 @@ if ( !class_exists( 'wtbInit' ) ) {
 
 		if ( $plugin == WTB_PLUGIN_FNAME ) {
 
-			$links['help'] = '<a href="' . WTB_PLUGIN_URL . '/docs" title="' . __( 'View the help documentation for Restaurant Reservations', 'wp-table-bookings' ) . '">' . __( 'Help', 'wp-table-bookings' ) . '</a>';
+			$links['help'] = '<a href="' . WTB_PLUGIN_URL . '/docs" title="' . __( 'View the help documentation for Table Bookings', 'wp-table-bookings' ) . '">' . __( 'Help', 'wp-table-bookings' ) . '</a>';
 		}
 
 		return $links;

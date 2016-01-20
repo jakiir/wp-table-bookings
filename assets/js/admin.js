@@ -1,4 +1,4 @@
-/* Javascript for Restaurant Reservations admin */
+/* Javascript for Table Bookings admin */
 jQuery(document).ready(function ($) {
 
 	// Add date picker to date filter in admin
@@ -633,7 +633,7 @@ jQuery(document).ready(function ($) {
 				}
 
 				// Set campaign parameters for addons
-				addon.url += '?utm_source=Plugin&utm_medium=Addon%20List&utm_campaign=Restaurant%20Reservations';
+				addon.url += '?utm_source=Plugin&utm_medium=Addon%20List&utm_campaign=Table%20Bookings';
 
 				var html = '<div class="addon ' + addon.id + '">';
 

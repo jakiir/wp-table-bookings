@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbCompatibility' ) ) {
 /**
- * Class to handle backwards compatibilty issues for Restaurant Reservations
+ * Class to handle backwards compatibilty issues for Table Bookings
  *
  * @since 1.3
  */

@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbNotifications' ) ) {
 /**
- * Class to process notifications for Restaurant Reservations
+ * Class to process notifications for Table Bookings
  *
  * This class contains the registered notifications and sends them when the
  * event is triggered.

@@ -362,12 +362,14 @@ class wtbBookingsTable extends WP_List_Table {
 		return array(
 			'cb'        => '<input type="checkbox" />', //Render a checkbox instead of text
 			'date'     	=> __( 'Date', 'wp-table-bookings' ),
-			'party'  	=> __( 'Party', 'wp-table-bookings' ),
+			'time'     	=> __( 'Time', 'wp-table-bookings' ),
+			/*'party'  	=> __( 'Party', 'wp-table-bookings' ),*/
 			'name'  	=> __( 'Name', 'wp-table-bookings' ),
-			'email'  	=> __( 'Email', 'wp-table-bookings' ),
-			'phone'  	=> __( 'Phone', 'wp-table-bookings' ),
+			/*'email'  	=> __( 'Email', 'wp-table-bookings' ),*/
+			'phone'  	=> __( 'Phone', 'wp-table-bookings' ),			
 			'status'  	=> __( 'Status', 'wp-table-bookings' ),
 			'details'  	=> __( 'Details', 'wp-table-bookings' ),
+			'delete'  	=> __( 'Delete', 'wp-table-bookings' )
 		);
 	}
 
@@ -414,6 +416,14 @@ class wtbBookingsTable extends WP_List_Table {
 				}
 
 				break;
+			case 'time' :
+				$value = $booking->format_time( $booking->date );
+				break;
+			case 'delete' :
+				$value = '<div class="actions" style="opacity: 1;">';
+				$value .= '<a href="#" class="trash" data-id="' . esc_attr( $booking->ID ) . '" data-action="trash">' . __( 'Delete', 'wp-table-bookings' ) . '</a>';
+				$value .= '</div>';
+			break;
 			case 'party' :
 				$value = $booking->party;
 				break;

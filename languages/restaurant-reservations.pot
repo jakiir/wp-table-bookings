@@ -1,8 +1,8 @@
-# Copyright (C) 2015 Restaurant Reservations
-# This file is distributed under the same license as the Restaurant Reservations package.
+# Copyright (C) 2015 Table Bookings
+# This file is distributed under the same license as the Table Bookings package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Restaurant Reservations 1.5\n"
+"Project-Id-Version: Table Bookings 1.5\n"
 "Report-Msgid-Bugs-To: "
 "http://wordpress.org/support/plugin/wp-table-bookings\n"
 "POT-Creation-Date: 2015-12-17 15:05:31+00:00\n"
@@ -31,7 +31,7 @@ msgid "Loading"
 msgstr ""
 
 #: includes/Addons.class.php:138
-msgid "Addons for Restaurant Reservations"
+msgid "Addons for Table Bookings"
 msgstr ""
 
 #: includes/Addons.class.php:160
@@ -53,7 +53,7 @@ msgid ""
 msgstr ""
 
 #: includes/AdminBookings.class.php:72
-msgid "Restaurant Bookings"
+msgid "Table Bookings"
 msgstr ""
 
 #: includes/AdminBookings.class.php:73 includes/CustomPostTypes.class.php:42
@@ -927,7 +927,7 @@ msgid ""
 msgstr ""
 
 #: wp-table-bookings.php:290
-msgid "View the help documentation for Restaurant Reservations"
+msgid "View the help documentation for Table Bookings"
 msgstr ""
 
 #: wp-table-bookings.php:290
@@ -935,12 +935,12 @@ msgid "Help"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "Restaurant Reservations"
+msgid "Table Bookings"
 msgstr ""
 
-#. #-#-#-#-#  wp-table-bookings.pot (Restaurant Reservations 1.5)  #-#-#-#-#
+#. #-#-#-#-#  wp-table-bookings.pot (Table Bookings 1.5)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  wp-table-bookings.pot (Restaurant Reservations 1.5)  #-#-#-#-#
+#. #-#-#-#-#  wp-table-bookings.pot (Table Bookings 1.5)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "http://themeofthecrop.com"
 msgstr ""

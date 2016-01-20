@@ -1,4 +1,4 @@
-/* Javascript for Restaurant Reservations booking form */
+/* Javascript for Table Bookings booking form */
 
 var wtb_booking_form = wtb_booking_form || {};
 

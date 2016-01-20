@@ -3,7 +3,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !class_exists( 'wtbNotificationEmail' ) ) {
 /**
- * Class to handle an email notification for Restaurant Reservations
+ * Class to handle an email notification for Table Bookings
  *
  * This class extends wtbNotification and must implement the following methods:
  *	prepare_notification() - set up and validate data
