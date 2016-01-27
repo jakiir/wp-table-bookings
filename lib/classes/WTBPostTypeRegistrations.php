@@ -42,7 +42,7 @@
 				'label'               => __( 'WP Table Bookings', WTB_SLUG ),
 				'description'         => __( 'WP Table Bookings', WTB_SLUG ),
 				'labels'              => $team_labels,
-				'supports'            => array( 'title', 'editor','thumbnail', 'page-attributes' ),
+				'supports'            => array( 'title' ),
 				'taxonomies'          => array(),
 				'hierarchical'        => false,
 				'public'              => true,

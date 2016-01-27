@@ -4,6 +4,7 @@ if ( !class_exists( 'wtbInit' ) ) {
 	{
 		public $post_type;		
 		public $taxonomies;
+		public $request;
 		
 		function __construct(){
         
@@ -19,7 +20,11 @@ if ( !class_exists( 'wtbInit' ) ) {
 			$this->assetsUrl        = WTB_PLUGIN_URL  . '/assets/';
 
 			$this->WTBloadClass( $this->classesPath ); 
-
+			
+			// Set up empty request object
+			$this->request = new stdClass();
+			$this->request->request_processed = false;
+			$this->request->request_inserted = false;
 			$this->options = array(
 					'settings' => 'wtb_settings'
 				);
@@ -47,7 +52,7 @@ if ( !class_exists( 'wtbInit' ) ) {
             	    $this->objects[] = $class;
             }
 	}
-	
+		
 	/**
      * @param $dir
      */
@@ -85,6 +90,33 @@ if ( !class_exists( 'wtbInit' ) ) {
         if( $pageReturn AND $pageReturn <> 1 )
             return $pageReturn;
         if( @$html ) return $html;        
+    } 
+	
+	/**
+     * Dynamicaly call any  method from models class
+     * by pluginFramework instance
+     */
+    function __call( $name, $args ){
+        if( !is_array($this->objects) ) return;
+        foreach($this->objects as $object){
+            if(method_exists($object, $name)){
+                $count = count($args);
+                if($count == 0)
+                    return $object->$name();
+                elseif($count == 1)
+                    return $object->$name($args[0]);
+                elseif($count == 2)
+                    return $object->$name($args[0], $args[1]);     
+                elseif($count == 3)
+                    return $object->$name($args[0], $args[1], $args[2]);      
+                elseif($count == 4)
+                    return $object->$name($args[0], $args[1], $args[2], $args[3]);  
+                elseif($count == 5)
+                    return $object->$name($args[0], $args[1], $args[2], $args[3], $args[4]);         
+                elseif($count == 6)
+                    return $object->$name($args[0], $args[1], $args[2], $args[3], $args[4], $args[5]);                                                                                             
+            }
+        }
     } 
 	
 	/**
