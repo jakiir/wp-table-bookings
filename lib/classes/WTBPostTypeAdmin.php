@@ -19,23 +19,23 @@
 			}
 			
 			public function manage_wtb_booking_columns( $column ) {
-			 global $wtbInit;
-			 
+				global $wtbInit;
+				$table_delete = add_query_arg(array('action_req'=>'bookings_delete', 'booking_id'=>get_the_ID()));				
 				switch ( $column ) {
 					case 'booking_date':
-						echo 'fsdad';
+						echo get_post_meta( get_the_ID(), 'wtb-date', true );
 						break;
 					case 'time':
-						echo 'dfasdf';
+						echo get_post_meta( get_the_ID() , 'wtb-time' , true );
 						break;
 					case 'name':
-						echo get_post_meta( get_the_ID() , 'email' , true );
+						echo get_post_meta( get_the_ID() , 'wtb-email' , true );
 						break;
 					case 'phone':
-						echo get_post_meta( get_the_ID() , 'phone' , true );
+						echo get_post_meta( get_the_ID() , 'wtb-phone' , true );
 						break;
 					case 'delete':
-						echo 'X';
+						echo "<a href='".$table_delete."' class='delete-bookings' alt='delete-bookings' title='delete-bookings'>Delete</a>";
 						break;
 					default:
 						break;

@@ -15,9 +15,10 @@ if (!class_exists('WTBSettings')):
 		 * @since 1.0
 		 */
 		function wtb_settings_style(){
-			global $wtbInit;
-			wp_enqueue_style( 'wp-color-picker' );
+			global $wtbInit;			
 			wp_enqueue_style( 'wtb_css_settings', $wtbInit->assetsUrl . 'css/settings.css');
+			wp_enqueue_style( 'tlp-team-core-ui-css', "https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" );
+			wp_enqueue_style( 'tpl-team-select2-css', $wtbInit->assetsUrl . 'vendor/select2/select2.min.css');	
 		}
 
 		/**
@@ -25,8 +26,9 @@ if (!class_exists('WTBSettings')):
 		 * @since 1.0
 		 */
 		function wtb_settings_script(){
-			global $wtbInit;
-			wp_enqueue_script( 'wtb_js_settings',  $wtbInit->assetsUrl. 'js/settings.js', array('jquery','wp-color-picker'), '', true );
+			global $wtbInit;			
+			wp_enqueue_script( 'tpl-team-select2-js',  $wtbInit->assetsUrl. 'vendor/select2/select2.min.js', array('jquery'), '', true );
+			wp_enqueue_script( 'wtb_js_settings',  $wtbInit->assetsUrl. 'js/settings.js', array('jquery'), '', true );
 			$nonce = wp_create_nonce( $wtbInit->nonceText() );
 			wp_localize_script( 'wtb_js_settings', 'tlpteam_var',
 				array(
@@ -42,26 +44,26 @@ if (!class_exists('WTBSettings')):
 		public function get_wp_booking_form_fields( $request = null ) {			
 			$fields = array(
 
-			// Reservation details fieldset
-			'reservation'	=> array(
-				'legend'	=> __( 'Book a table', 'restaurant-reservations' ),
+			// Table-booking details fieldset
+			'table-booking'	=> array(
+				'legend'	=> __( 'Book a table', WTB_SLUG ),
 				'fields'	=> array(
 					'date'		=> array(
-						'title'			=> __( 'Date', 'restaurant-reservations' ),
+						'title'			=> __( 'Date', WTB_SLUG ),
 						'request_input'	=> empty( $request->request_date ) ? '' : $request->request_date,
-						'callback'		=> 'rtb_print_form_text_field',
+						'callback'		=> 'wtb_print_form_text_field',
 						'required'		=> true,
 					),
 					'time'		=> array(
-						'title'			=> __( 'Time', 'restaurant-reservations' ),
+						'title'			=> __( 'Time', WTB_SLUG ),
 						'request_input'	=> empty( $request->request_time ) ? '' : $request->request_time,
-						'callback'		=> 'rtb_print_form_text_field',
+						'callback'		=> 'wtb_print_form_text_field',
 						'required'		=> true,
 					),
 					'party'		=> array(
-						'title'			=> __( 'Party', 'restaurant-reservations' ),
+						'title'			=> __( 'Party', WTB_SLUG ),
 						'request_input'	=> empty( $request->party ) ? '' : $request->party,
-						'callback'		=> 'rtb_print_form_select_field',
+						'callback'		=> 'wtb_print_form_select_field',
 						'callback_args'	=> array(
 							'options'	=> $this->get_wp_form_party_options(),
 						),
@@ -72,40 +74,40 @@ if (!class_exists('WTBSettings')):
 
 			// Contact details fieldset
 			'contact'	=> array(
-				'legend'	=> __( 'Contact Details', 'restaurant-reservations' ),
+				'legend'	=> __( 'Contact Details', WTB_SLUG ),
 				'fields'	=> array(
 					'name'		=> array(
-						'title'			=> __( 'Name', 'restaurant-reservations' ),
+						'title'			=> __( 'Name', WTB_SLUG ),
 						'request_input'	=> empty( $request->name ) ? '' : $request->name,
-						'callback'		=> 'rtb_print_form_text_field',
+						'callback'		=> 'wtb_print_form_text_field',
 						'required'		=> true,
 					),
 					'email'		=> array(
-						'title'			=> __( 'Email', 'restaurant-reservations' ),
+						'title'			=> __( 'Email', WTB_SLUG ),
 						'request_input'	=> empty( $request->email ) ? '' : $request->email,
-						'callback'		=> 'rtb_print_form_text_field',
+						'callback'		=> 'wtb_print_form_text_field',
 						'callback_args'	=> array(
 							'input_type'	=> 'email',
 						),
 						'required'		=> true,
 					),
 					'phone'		=> array(
-						'title'			=> __( 'Phone', 'restaurant-reservations' ),
+						'title'			=> __( 'Phone', WTB_SLUG ),
 						'request_input'	=> empty( $request->phone ) ? '' : $request->phone,
-						'callback'		=> 'rtb_print_form_text_field',
+						'callback'		=> 'wtb_print_form_text_field',
 						'callback_args'	=> array(
 							'input_type'	=> 'tel',
 						),
 					),
 					'add-message'	=> array(
-						'title'		=> __( 'Add a Message', 'restaurant-reservations' ),
+						'title'		=> __( 'Add a Message', WTB_SLUG ),
 						'request_input'	=> '',
-						'callback'	=> 'rtb_print_form_message_link',
+						'callback'	=> 'wtb_print_form_message_link',
 					),
 					'message'		=> array(
-						'title'			=> __( 'Message', 'restaurant-reservations' ),
+						'title'			=> __( 'Message', WTB_SLUG ),
 						'request_input'	=> empty( $request->message ) ? '' : $request->message,
-						'callback'		=> 'rtb_print_form_textarea_field',
+						'callback'		=> 'wtb_print_form_textarea_field',
 					),
 				),
 			),
@@ -125,13 +127,13 @@ if (!class_exists('WTBSettings')):
 
 			$party_size = (int) $this->get_setting( 'party-size' );
 
-			$max = empty( $party_size ) ? apply_filters( 'rtb_party_size_upper_limit', 100 ) : (int) $this->get_setting( 'party-size' );
+			$max = empty( $party_size ) ? apply_filters( 'wtb_party_size_upper_limit', 100 ) : (int) $this->get_setting( 'party-size' );
 
 			for ( $i = 1; $i <= $max; $i++ ) {
 				$options[$i] = $i;
 			}
 
-			return apply_filters( 'rtb_form_party_options', $options );
+			return apply_filters( 'wtb_form_party_options', $options );
 		}
 		
 		/**

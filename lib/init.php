@@ -19,8 +19,8 @@ if ( !class_exists( 'wtbInit' ) ) {
 
 			$this->assetsUrl        = WTB_PLUGIN_URL  . '/assets/';
 
-			$this->WTBloadClass( $this->classesPath ); 
-			
+			$this->WTBloadClass( $this->classesPath );
+			$this->loadFunctions( $this->functionsPath );			
 			// Set up empty request object
 			$this->request = new stdClass();
 			$this->request->request_processed = false;
@@ -28,7 +28,35 @@ if ( !class_exists( 'wtbInit' ) ) {
 			$this->options = array(
 					'settings' => 'wtb_settings'
 				);
+		}		
+	/**
+	 * nonce Text for booking table
+	 * since 1.0
+	*/	
+	function nonceText(){
+		return "wp_table_booking_nonce";
+	}		
+	/**
+	 * Load all required function
+	 * since 1.0
+	*/
+	function loadFunctions( $dir ){
+	   $this->loadDirectory( $dir );            
+	}
+	
+	 /**
+	 * Include all file from any directory
+	 * Create instence of each class and add return all instance as an array
+	 */
+	function loadDirectory( $dir ){
+		if (!file_exists($dir)) return;
+		foreach (scandir($dir) as $item) {
+			if( preg_match( "/.php$/i" , $item ) ) {
+				require_once( $dir . $item );				
+			}
 		}
+		return;
+	}
 	
 	/**
      * @param $dir

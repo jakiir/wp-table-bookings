@@ -1,1 +1,4 @@
-#rtb-date{border:2px solid red;}
+#wtb_booking_settings_meta input{width: 25em;}
+#wtb_booking_settings_meta label{width: 10em;display: inline-block;font-weight:bold;}
+#wtb_booking_settings_meta fieldset{margin-bottom:20px;}
+#wtb_booking_settings_meta fieldset div{margin-bottom:10px;}
