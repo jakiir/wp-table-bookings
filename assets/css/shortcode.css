@@ -1,0 +1,4 @@
+ul.wp-table-bookins{list-style: none;}
+ul.wp-table-bookins li{width: 50%;display: inline-block;vertical-align: top;}
+ul.wp-table-bookins li.wtb-title{font-weight:bold;text-transform: capitalize;}
+ul.wp-table-bookins li.wtb-title::after{content:" : "}

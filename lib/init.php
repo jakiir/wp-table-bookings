@@ -4,12 +4,14 @@ if ( !class_exists( 'wtbInit' ) ) {
 	{
 		public $post_type;		
 		public $taxonomies;
+		public $schotCodeWTB;
 		public $request;
 		
 		function __construct(){
         
 			$this->post_type = 'wtb-booking';
-			$this->post_type_slug = 'table-booking';			
+			$this->post_type_slug = 'table-booking';
+			$this->schotCodeWTB = 'table-booking-sc';
 			$this->taxonomies = array();
 			$this->incPath       = dirname( __FILE__ );
 			$this->functionsPath    = $this->incPath . '/functions/';
@@ -26,9 +28,11 @@ if ( !class_exists( 'wtbInit' ) ) {
 			$this->request->request_processed = false;
 			$this->request->request_inserted = false;
 			$this->options = array(
-					'settings' => 'wtb_settings'
-				);
-		}		
+			  'settings' => 'wtb_settings'
+			);
+		}	
+
+		
 	/**
 	 * nonce Text for booking table
 	 * since 1.0
@@ -146,24 +150,6 @@ if ( !class_exists( 'wtbInit' ) ) {
             }
         }
     } 
-	
-	/**
-	 * Format date
-	 * @since 1.0
-	 */
-	public function format_date( $date ) {
-		$date = mysql2date( get_option( 'date_format' ) , $date);
-		return apply_filters( 'get_the_date', $date );
-	}
-	
-	/**
-	 * Format time
-	 * @since 1.0
-	 */
-	public function format_time( $time ) {
-		$time = mysql2date( get_option( 'time_format' ), $time);
-		return apply_filters( 'get_the_date', $time );
-	}
 		
 	}
 }

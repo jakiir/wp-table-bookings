@@ -62,8 +62,7 @@
 			global $wtbInit;
 			register_post_type( $wtbInit->post_type, $team_args );
 			flush_rewrite_rules();
-		}
-		
+		}		
 	}
 endif;
 ?>

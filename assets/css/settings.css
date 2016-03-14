@@ -1,4 +1,5 @@
 #wtb_booking_settings_meta input{width: 25em;}
-#wtb_booking_settings_meta label{width: 10em;display: inline-block;font-weight:bold;}
+#wtb_booking_settings_meta label{width: 10em;display: inline-block;font-weight:bold;vertical-align: top;}
 #wtb_booking_settings_meta fieldset{margin-bottom:20px;}
 #wtb_booking_settings_meta fieldset div{margin-bottom:10px;}
+.wtb_loading {background: url('../images/loading.gif') no-repeat center center;padding: 11px;}
